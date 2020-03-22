@@ -10,7 +10,7 @@ documentation = "https://github.com/1m5/1m5-daemon"
 repository = "https://github.com/1m5/1m5-daemon.git"
 publish = true
 readme = "README.md"
-keywords = ["censorship-resistance","privacy","decentralized-application"]
+keywords = ["censorship","privacy","decentralized"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
