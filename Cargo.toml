@@ -18,7 +18,7 @@ keywords = ["censorship","privacy","decentralized"]
 log = "0.4.8"
 simple_logger = "1.6.0"
 
-ra_common = "0.0.32"
+ra_common = "0.0.35"
 seda_bus = "0.0.13"
 
 onemfive_common = "0.0.2"

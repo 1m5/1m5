@@ -1,5 +1,5 @@
 /// Router module
-use ra_common::models::{Envelope, Route, Network, NetworkId};
+use ra_common::models::{Envelope, Route, Network, NetworkId, Packet};
 use onemfive_common::ManCon;
 use std::collections::HashMap;
 
@@ -19,6 +19,11 @@ impl Router {
     pub fn init() {
 
     }
+
+    pub fn routePacket(&mut self, packet: Packet) -> Packet {
+
+        return packet;
+    }
     /// Update Route in Envelope by determining current state followed by expected route decision.
     ///
     /// When ManCon not provided or is set to Unknown,
@@ -30,11 +35,22 @@ impl Router {
     /// When the route has not been routed (route._routed = false) and the route._to address
     /// is different than its route._destination, then a relay is requested.
     ///
+    /// When relay requested and route._to address is the same as the current Node's address, then
+    /// relay has been satisfied.
     ///
+    /// ManCon in general:
     ///
-    pub fn route(&mut self, env: Envelope) {
-        let mancon_header = env.headers.get("mancon");
-        let current_route = env.slip.current_route();
+    /// NEO: 1DN Only w/ Random Configurable Delays: 10-100 Relays (~2sec-90days) / 20-200 Round-trip (~4sec-90days)
+    /// Extreme: 1DN + I2P w/ Random Configurable Delays: 5 Relays (~1sec-6minutes) / 10 Round-trip (~2sec-1day)
+    /// VeryHigh:I2P w/ Random Configurable Delays: 4 Relays (~800ms-6minutes) / 8 Round-trip (~1.8sec-12minutes)
+    /// High: I2P: 4 Relays (~800ms) / 8 Round-trip (~1.8sec)
+    /// Medium: TOR: 3 Relays (~600ms) / 6 Round-trip (~1.4sec)
+    /// Low: VPN: 1 Relay (~200ms) / 2 Round-trip (~600ms)
+    /// None: HTTPS: 0 Relays
+    /// UNKNOWN: Error
+    ///
+    pub fn routeEnvelope(&mut self, env: Envelope) -> Envelope {
 
+        return env;
     }
 }
