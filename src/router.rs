@@ -20,10 +20,14 @@ impl Router {
 
     }
 
-    pub fn routePacket(&mut self, packet: Packet) -> Packet {
+    /// Route incoming packet.
+    /// If packet's network + address is the same as the current node's network + address, then
+    /// this is the destination and begin routing the embedded Envelope internally otherwise
+    /// continue routing the packet.
+    pub fn route_packet(&mut self, packet: Packet) {
 
-        return packet;
     }
+
     /// Update Route in Envelope by determining current state followed by expected route decision.
     ///
     /// When ManCon not provided or is set to Unknown,
@@ -49,8 +53,7 @@ impl Router {
     /// None: HTTPS: 0 Relays
     /// UNKNOWN: Error
     ///
-    pub fn routeEnvelope(&mut self, env: Envelope) -> Envelope {
+    fn route_envelope(&mut self, env: Envelope) {
 
-        return env;
     }
 }
