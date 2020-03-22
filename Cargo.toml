@@ -1,6 +1,6 @@
 [package]
 name = "onemfive_daemon"
-version = "0.0.1"
+version = "0.0.3"
 authors = ["objectorange <objectorange@1m5.io>"]
 edition = "2018"
 description = "1M5 daemon providing censorship-resistant communications and services"
@@ -17,9 +17,9 @@ keywords = ["censorship resistance","privacy","decentralized application"]
 log = "0.4.8"
 simple_logger = "1.6.0"
 
-ra_common = "0.0.28"
+ra_common = "0.0.32"
 seda_bus = "0.0.13"
 
-onemfive_common = "0.0.1"
+onemfive_common = "0.0.2"
 
 
