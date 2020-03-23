@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/1m5/1m5-daemon.svg?branch=master)](https://travis-ci.com/1m5/1m5-daemon)
+
 <div align="center">
   <img src="https://1m5.io/assets/img/bg/official2.jpg"  />
 
@@ -8,16 +10,15 @@
   </p>
 
   <p>
-  (https://travis-ci.com/resolvingarchitecture/ra-common.svg?branch=master)](https://travis-ci.com/resolvingarchitecture/ra-common)
     <a href="https://crates.io/crates/onemfive-daemon"><img alt="Crate Info" src="https://img.shields.io/crates/v/onemfive-daemon.svg"/></a>
     <a href="https://docs.rs/crate/onemfive_daemon/"><img alt="API Docs" src="https://img.shields.io/badge/docs.rs-onemfive_daemon-green"/></a>
     <a href="https://blog.rust-lang.org/2020/03/12/Rust-1.42.html"><img alt="Rustc Version 1.42+" src="https://img.shields.io/badge/rustc-1.42+-green.svg"/></a>
   </p>
 
   <h4>
-    <a href="https://1m5.io">Documentation</a>
+    <a href="https://1m5.io">Info</a>
     <span> | </span>
-    <a href="https://github.com/1m5">Examples</a>
+    <a href="https://docs.rs/crate/onemfive_daemon/">Docs</a>
     <span> | </span>
     <a href="https://github.com/1m5/1m5-daemon/blob/master/CHANGELOG.md">Changelog</a>
     <span> | </span>
