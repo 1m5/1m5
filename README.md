@@ -67,6 +67,10 @@ Notes: a re-design in routing was also necessary as the original routing across 
 to the destination and every 1M5 relay in between. It's desired to change this to onion routing so that 1M5 relays
 are not aware of whom is an originator nor destination. This requires building up lease sets similar to how TOR/I2P works.
 
+## Current TODO:
+
+* Use this [example](https://github.com/saschagrunert/webapp.rs) turn build the front-end using Wasm and Rust.
+
 ## Licensing
 
 In the interests of ensuring the 1M5 mission, all copyright automatically imposed on the 1M5 project by any and all people
@@ -328,6 +332,10 @@ Envelopes are routed within the destination node's 1M5 Daemon process to fulfill
 -  -     -  ----------------------  -
 -  -     -  - DID                -  -
 -  -     -  ----------------------  -
+-  -     -                          -
+-  -     -  ----------------------  -
+-  -     -  - MongoDB            -  -
+-  -     -  ----------------------  -
 -  -------                          -
 -------------------------------------
 
@@ -374,3 +382,5 @@ If the message is an Envelope, it sends it to the Service Router.
 #### [CDN](https://github.com/resolvingarchitecture/content-distribution-network)
 
 #### [DID](https://github.com/resolvingarchitecture/decentralized-identification)
+
+#### MongoDB
