@@ -1,6 +1,6 @@
 [package]
 name = "onemfive_daemon"
-version = "0.0.7"
+version = "0.0.8"
 authors = ["objectorange <objectorange@1m5.io>"]
 license-file = "LICENSE"
 edition = "2018"
@@ -23,4 +23,10 @@ seda_bus = "0.0.15"
 
 onemfive_common = "0.0.2"
 
+rocket = "0.4.4"
+
+[dependencies.rocket_contrib]
+version = "0.4.4"
+default-features = false
+features = ["serve","json"]
 

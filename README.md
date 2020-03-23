@@ -306,6 +306,10 @@ Envelopes are routed within the destination node's 1M5 Daemon process to fulfill
 -  -     -  ----------------------  -
 -  -     -                          -
 -  -     -  ----------------------  -
+-  -     -  - API (Localhost)    -  -
+-  -     -  ----------------------  -
+-  -     -                          -
+-  -     -  ----------------------  -
 -  -     -  - Service Router     -  -
 -  -     -  ----------------------  -
 -  -     -                          -
