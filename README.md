@@ -1,5 +1,29 @@
-# Daemon
-A full rewrite of 1M5 Java in Rust. 
+<div align="center">
+  <img src="https://1m5.io/assets/img/bg/official2.jpg"  />
+
+  <h1>1M5</h1>
+
+  <p>
+    <strong>Invisible Matrix Services - Uncensored Communications</strong>
+  </p>
+
+  <p>
+  (https://travis-ci.com/resolvingarchitecture/ra-common.svg?branch=master)](https://travis-ci.com/resolvingarchitecture/ra-common)
+    <a href="https://crates.io/crates/onemfive-daemon"><img alt="Crate Info" src="https://img.shields.io/crates/v/onemfive-daemon.svg"/></a>
+    <a href="https://docs.rs/crate/onemfive_daemon/"><img alt="API Docs" src="https://img.shields.io/badge/docs.rs-onemfive_daemon-green"/></a>
+    <a href="https://blog.rust-lang.org/2020/03/12/Rust-1.42.html"><img alt="Rustc Version 1.42+" src="https://img.shields.io/badge/rustc-1.42+-green.svg"/></a>
+  </p>
+
+  <h4>
+    <a href="https://1m5.io">Documentation</a>
+    <span> | </span>
+    <a href="https://github.com/1m5">Examples</a>
+    <span> | </span>
+    <a href="https://github.com/1m5/1m5-daemon/blob/master/CHANGELOG.md">Changelog</a>
+    <span> | </span>
+    <a href="https://1m5.io/technical-roadmap.html">Roadmap</a>
+  </h4>
+</div>
 
 ## Donate
 
@@ -78,6 +102,10 @@ Envelopes are routed within the destination node's 1M5 Daemon process to fulfill
 -  -     -  ----------------------  -
 -  -     -                          -
 -  -     -  ----------------------  -
+-  -     -  - Locha Mesh Client  -  -
+-  -     -  ----------------------  -
+-  -     -                          -
+-  -     -  ----------------------  -
 -  -     -  - Satellite Client   -  -
 -  -     -  ----------------------  -
 -  -     -                          -
@@ -121,5 +149,32 @@ If the message is an Envelope, it sends it to the Service Router.
 
 #### [Service Bus](https://github.com/resolvingarchitecture/service-bus)
 
-#### [RA]
+#### [LiFi Client](https://github.com/resolvingarchitecture/lifi-client)
 
+#### [Bluetooth Client](https://github.com/resolvingarchitecture/bluetooth-client)
+
+#### [WiFi Direct Client](https://github.com/resolvingarchitecture/wifidirect-client)
+
+#### HTTPS Client
+
+#### VPN Client
+
+#### [TOR Client](https://github.com/resolvingarchitecture/tor-client)
+
+#### [I2P Client](https://github.com/resolvingarchitecture/i2p-client)
+
+#### [Locha Mesh Client](https://github.com/resolvingarchitecture/locha-mesh-client)
+
+#### Satellite Client
+
+#### [FS Radio Client](https://github.com/resolvingarchitecture/gnuradio-client)
+
+#### [Service Router](https://github.com/resolvingarchitecture/service-router)
+
+#### [Keychain](https://github.com/resolvingarchitecture/keychain)
+
+#### InfoVault
+
+#### [CDN](https://github.com/resolvingarchitecture/content-distribution-network)
+
+#### [DID](https://github.com/resolvingarchitecture/decentralized-identification)
