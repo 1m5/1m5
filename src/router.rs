@@ -1,37 +1,29 @@
 /// Router module
-use ra_common::models::{Envelope, Route, Network, NetworkId, Packet};
+use ra_common::models::{Envelope, Route, Network, NetworkId, Packet, Service};
 use onemfive_common::ManCon;
 use std::collections::HashMap;
 
 /// Primary method for ensuring uncensored communications.
-pub struct Router {
-    _nets: HashMap<NetworkId,Network>
+pub struct NetworkRouter {
+    _nets: HashMap<i16,Network>
 }
 
-impl Router {
-    pub fn new() -> Box<Router> {
-        Box::new(Router {
+impl NetworkRouter {
+    pub fn new() -> Box<NetworkRouter> {
+        Box::new(NetworkRouter {
            _nets: HashMap::new()
         })
     }
     /// Initialize Router by instantiating a Network for each network client to support then start
     /// each network client's discovery process.
-    pub fn init() {
+    pub fn init(&mut self) {
 
     }
 
     /// Route incoming packet.
-    /// If packet's network + address is the same as the current node's network + address, then
-    /// this is the destination and begin routing the embedded Envelope internally otherwise
-    /// continue routing the packet.
-    pub fn route_packet(&mut self, packet: Packet) {
-
-    }
-
-    /// Update Route in Envelope by determining current state followed by expected route decision.
     ///
     /// When ManCon not provided or is set to Unknown,
-    /// return an error to the last address stating requirement.
+    /// return an error to the from address stating requirement.
     ///
     /// When the current_route has been routed (env.slip.current_route._routed = true),
     /// env.slip.end_route(current_route) is called providing the next route if another route is available.
@@ -53,7 +45,11 @@ impl Router {
     /// None: HTTPS: 0 Relays
     /// UNKNOWN: Error
     ///
-    fn route_envelope(&mut self, env: Envelope) {
+    pub fn route(&mut self, packet: Packet) {
+        if packet.headers.get("mancon").is_none() {
+            // Add error indicating ManCon is required, sending it back to from address
+
+        }
 
     }
 }

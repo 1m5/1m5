@@ -9,13 +9,13 @@ fn main() {
     simple_logger::init().unwrap();
     trace!("Starting 1M5 Daemon...");
 
-    // Initialize the Service Bus with configuration information
+    // Start the Service/SEDA Bus
 
-    // Start Service Bus with SEDA Bus
+    // Register Desired Network Services (e.g. I2P Client)
 
-    // Determine what applicable services are available registering each with the Service Bus
+    // Register Network Router Service
 
-    // Start Router Service
+    // Register Desired App Services (e.g. InfoVault)
 
     trace!("1M5 Daemon Stopped.");
 }
