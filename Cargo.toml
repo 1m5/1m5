@@ -1,6 +1,6 @@
 [package]
 name = "onemfive_daemon"
-version = "0.0.6"
+version = "0.0.7"
 authors = ["objectorange <objectorange@1m5.io>"]
 license-file = "LICENSE"
 edition = "2018"
