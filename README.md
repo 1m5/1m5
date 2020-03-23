@@ -1,5 +1,11 @@
 # Daemon
-A full rewrite of 1M5 Java in Rust. Why?
+A full rewrite of 1M5 Java in Rust. 
+
+## Donate
+
+[![Become a patron](https://resolvingarchitecture.io/images/become_a_patron_button.png)](https://www.patreon.com/1m5)
+
+## Why rewrite in Rust?
 
 * 1M5 is heavily networked and part of its targeted platforms are tiny electronics with limited resources.
 * Rust has great support for threading and keeping threads safe. 
