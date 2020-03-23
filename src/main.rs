@@ -44,7 +44,7 @@ fn main() {
 
     // Start API service
     rocket::ignite()
-        .mount("/", StaticFiles::from(concat!(env!("CARGO_MANIFEST_DIR"), "/public")))
+        .mount("/", StaticFiles::from(concat!(env!("CARGO_MANIFEST_DIR"), "/static")))
         .mount("/api", routes![index,peer])
         .launch();
     trace!("1M5 Daemon Stopped.");
