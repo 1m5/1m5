@@ -384,3 +384,31 @@ If the message is an Envelope, it sends it to the Service Router.
 #### [DID](https://github.com/resolvingarchitecture/decentralized-identification)
 
 #### MongoDB
+
+## Compiling from Source
+```
+$> cargo build --release
+```
+## Testing
+```
+$> cargo test
+```
+## Cross-Compiling
+### ARMv7 (e.g. Raspberry Pi)
+``` 
+$> rustup target add armv7-unknown-linux-gnueabihf 
+$> sudo apt-get install -qq gcc-arm-linux-gnueabihf 
+$> cargo build --release --target=armv7-unknown-linux-gnueabihf 
+```
+## Packaging
+
+### Deb
+```
+$> cargo install cargo-deb
+$> cargo deb
+```
+### RPM
+```
+$> cargo install cargo-rpm
+$> cargo rpm build
+```

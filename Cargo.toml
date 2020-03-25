@@ -20,11 +20,21 @@ travis-ci = { repository = "1m5/1m5-daemon", branch = "master" }
 [dependencies]
 log = "0.4.8"
 simple_logger = "1.6.0"
+failure = "0.1.5"
+exitfailure = "0.5.1"
 
-ra_common = "0.0.39"
+## Infrastructure
+ra_common = "0.0.40"
 seda_bus = "0.0.15"
 
-onemfive_common = "0.0.2"
+onemfive_common = "0.0.5"
+
+# Network Services
+https_client = "0.0.1"
+vpn_client = "0.0.1"
+i2p_client = "0.0.6"
+tor_client = "0.0.4"
+bluetooth_client = "0.0.6"
 
 rocket = "0.4.4"
 
