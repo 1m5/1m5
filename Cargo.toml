@@ -1,6 +1,6 @@
 [package]
 name = "onemfive_daemon"
-version = "0.0.11"
+version = "0.0.12"
 authors = ["objectorange <objectorange@1m5.io>"]
 license-file = "LICENSE"
 edition = "2018"
@@ -30,11 +30,11 @@ seda_bus = "0.0.15"
 onemfive_common = "0.0.7"
 
 # Network Services
-https_client = "0.0.4"
-vpn_client = "0.0.6"
-tor_client = "0.0.7"
-i2p_client = "0.0.10"
-bluetooth_client = "0.0.9"
+https_client = "0.0.6"
+vpn_client = "0.0.7"
+tor_client = "0.0.8"
+i2p_client = "0.0.11"
+bluetooth_client = "0.0.10"
 
 rocket = "0.4.4"
 

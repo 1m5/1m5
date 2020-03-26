@@ -58,7 +58,7 @@ fn main() {
     let to = String::from("5678");
     let sig = String::from("sig");
     let mut packet = Packet::new(PacketType::Data, NetworkId::IMS, from, to, sig);
-    // packet.headers.insert(String::from("mancon"), ManCon::VeryHigh.try_into());
+    packet.headers.insert(String::from("mancon"), String::from("5"));
     n_router.route(&mut packet);
     // Register App Services (e.g. InfoVault)
 
