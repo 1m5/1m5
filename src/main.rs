@@ -5,7 +5,7 @@ extern crate simple_logger;
 #[macro_use] extern crate rocket;
 #[macro_use] extern crate rocket_contrib;
 
-pub mod router;
+mod router;
 
 use log::{trace,info};
 
@@ -14,7 +14,10 @@ use std::path::{Path,PathBuf};
 use rocket::response::NamedFile;
 use rocket_contrib::serve::StaticFiles;
 use rocket_contrib::json::JsonValue;
-use crate::router::NetworkRouter;
+
+use ra_common::models::{Packet, PacketType, NetworkId};
+use onemfive_common::ManCon;
+use router::NetworkRouter;
 
 /// **** Admin UI **** ///
 
@@ -40,9 +43,9 @@ fn index() -> &'static str {
 }
 
 fn main() {
+    let exit_code = 0;
     simple_logger::init().unwrap();
-    trace!("Starting 1M5 Daemon...");
-
+    trace!("Starting 1M5...");
     // Start the Service/SEDA Bus
 
     // Register Network Services (e.g. I2P Client)
@@ -51,13 +54,19 @@ fn main() {
     let mut n_router = NetworkRouter::new();
     n_router.init();
 
-
+    let from = String::from("1234");
+    let to = String::from("5678");
+    let sig = String::from("sig");
+    let mut packet = Packet::new(PacketType::Data, NetworkId::IMS, from, to, sig);
+    // packet.headers.insert(String::from("mancon"), ManCon::VeryHigh.try_into());
+    n_router.route(&mut packet);
     // Register App Services (e.g. InfoVault)
 
     // Start API service
-    rocket::ignite()
+    let err = rocket::ignite()
         .mount("/", StaticFiles::from(concat!(env!("CARGO_MANIFEST_DIR"), "/static")))
         .mount("/api", routes![index,peer])
         .launch();
-    trace!("1M5 Daemon Stopped.");
+
+    std::process::exit(exit_code);
 }

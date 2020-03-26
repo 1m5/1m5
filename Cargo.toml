@@ -24,17 +24,17 @@ failure = "0.1.5"
 exitfailure = "0.5.1"
 
 ## Infrastructure
-ra_common = "0.0.40"
+ra_common = "0.0.43"
 seda_bus = "0.0.15"
 
-onemfive_common = "0.0.5"
+onemfive_common = "0.0.7"
 
 # Network Services
-https_client = "0.0.1"
-vpn_client = "0.0.1"
-i2p_client = "0.0.6"
-tor_client = "0.0.4"
-bluetooth_client = "0.0.6"
+https_client = "0.0.4"
+vpn_client = "0.0.6"
+tor_client = "0.0.7"
+i2p_client = "0.0.10"
+bluetooth_client = "0.0.9"
 
 rocket = "0.4.4"
 
