@@ -75,6 +75,7 @@ impl NetworkRouter {
         if packet.headers.get("mancon").is_none() {
             // Add error indicating ManCon is required, sending it back to from address
             packet.headers.insert(String::from("err"),String::from("ManCon required in packet header with name = mancon"));
+            // TODO: Send this back to the sender using the same network
             return;
         }
         let mancon_str = packet.headers.get("mancon").unwrap();
