@@ -78,39 +78,40 @@ impl NetworkRouter {
             return;
         }
         let mancon_str = packet.headers.get("mancon").unwrap();
-        let mancon_num = mancon_str.parse::<u8>().unwrap();
-        let res = ManCon::try_from(mancon_num);
-        if res.is_ok() {
-            let mancon = res.unwrap();
-            match mancon {
-                ManCon::Low => {
-                    self._vpn.handle(packet);
-                },
-                ManCon::Medium => {
-                    self._tor.handle(packet);
-                },
-                ManCon::High => {
-                    self._i2p.handle(packet);
-                },
-                ManCon::VeryHigh => {
-                    packet.max_delay = 90 * 1000; // 90 seconds
-                    self._i2p.handle(packet);
-                },
-                ManCon::Extreme => {
-                    packet.max_delay = 90 * 1000; // 90 seconds
-                    packet.headers.insert(String::from("relay_net"),String::from("5"));
-                    self._bt.handle(packet);
-                },
-                ManCon::Neo => {
-                    packet.min_delay = 10 * 1000; // 10 seconds
-                    packet.max_delay = 50 * 24 * 60 * 60 * 1000; // 50 days
-                    packet.headers.insert(String::from("1dn_only"),String::from("true"));
-                    self._bt.handle(packet);
-                },
-                _ => {
-                    self._https.handle(packet);
+        let mancon_num: u8 = mancon_str.parse::<u8>().unwrap();
+        match ManCon::try_from(mancon_num) {
+            Ok(mancon) => {
+                match mancon {
+                    ManCon::Low => {
+                        self._vpn.handle(packet);
+                    },
+                    ManCon::Medium => {
+                        self._tor.handle(packet);
+                    },
+                    ManCon::High => {
+                        self._i2p.handle(packet);
+                    },
+                    ManCon::VeryHigh => {
+                        packet.max_delay = 90 * 1000; // 90 seconds
+                        self._i2p.handle(packet);
+                    },
+                    ManCon::Extreme => {
+                        packet.max_delay = 90 * 1000; // 90 seconds
+                        packet.headers.insert(String::from("relay_net"), String::from("5"));
+                        self._bt.handle(packet);
+                    },
+                    ManCon::Neo => {
+                        packet.min_delay = 10 * 1000; // 10 seconds
+                        packet.max_delay = 50 * 24 * 60 * 60 * 1000; // 50 days
+                        packet.headers.insert(String::from("1dn_only"), String::from("true"));
+                        self._bt.handle(packet);
+                    },
+                    _ => {
+                        self._https.handle(packet);
+                    }
                 }
-            }
+            },
+            Err(e) => warn!("{}","ManCon ordinal unsupported.")
         }
     }
 }
