@@ -63,10 +63,6 @@ and are often written in very terse methods and the latter uses garbage collecti
 * Learning Rust is exciting. Neither Clojure, Scala, or other JVM languages have produced much of that affect.
 * 1M5 codebase is going to be much smaller with far less objects yet still get the benefit of object-orientation.
 
-Notes: a re-design in routing was also necessary as the original routing across networks exposed the origination 
-to the destination and every 1M5 relay in between. It's desired to change this to onion routing so that 1M5 relays
-are not aware of whom is an originator nor destination. This requires building up lease sets similar to how TOR/I2P works.
-
 ## Current TODO:
 
 * Use this [example](https://github.com/saschagrunert/webapp.rs) turn build the front-end using Wasm and Rust.
