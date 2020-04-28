@@ -1,6 +1,6 @@
 [package]
-name = "onemfive_daemon"
-version = "0.0.13"
+name = "onemfive"
+version = "0.0.14"
 authors = ["objectorange <objectorange@1m5.io>"]
 license-file = "LICENSE"
 edition = "2018"
@@ -15,7 +15,7 @@ keywords = ["censorship","privacy","decentralized"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [badges]
-travis-ci = { repository = "1m5/1m5-daemon", branch = "master" }
+travis-ci = { repository = "1m5/1m5", branch = "master" }
 
 [dependencies]
 log = "0.4.8"

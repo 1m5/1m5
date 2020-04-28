@@ -7,30 +7,30 @@
     <strong>Invisible Matrix Services - Uncensored Communications</strong>
   </p>
   <p>
-    <a href="https://travis-ci.com/1m5/1m5-daemon"><img alt="build" src="https://img.shields.io/travis/1m5/1m5-daemon"/></a>
-    <a href="https://crates.io/crates/onemfive-daemon"><img alt="Crate Info" src="https://img.shields.io/crates/v/onemfive-daemon.svg"/></a>
-    <a href="https://docs.rs/crate/onemfive_daemon/"><img alt="API Docs" src="https://img.shields.io/badge/docs.rs-onemfive_daemon-green"/></a>
+    <a href="https://travis-ci.com/1m5/1m5"><img alt="build" src="https://img.shields.io/travis/1m5/1m5"/></a>
+    <a href="https://crates.io/crates/onemfive-daemon"><img alt="Crate Info" src="https://img.shields.io/crates/v/onemfive.svg"/></a>
+    <a href="https://docs.rs/crate/onemfive_daemon/"><img alt="API Docs" src="https://img.shields.io/badge/docs.rs-onemfive-green"/></a>
   </p>
   <p>
-    <a href="https://github.com/1m5/1m5-daemon/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/1m5/1m5-daemon"/></a>
+    <a href="https://github.com/1m5/1m5/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/1m5/1m5"/></a>
     <a href="https://1m5.io/ks/publickey.objectorange@1m5.io.asc"><img alt="PGP" src="https://img.shields.io/keybase/pgp/objectorange"/></a>
   </p>
   <p>
-    <img alt="commits" src="https://img.shields.io/crates/d/onemfive-daemon"/>
-    <img alt="repo size" src="https://img.shields.io/github/repo-size/1m5/1m5-daemon"/>
+    <img alt="commits" src="https://img.shields.io/crates/d/onemfive"/>
+    <img alt="repo size" src="https://img.shields.io/github/repo-size/1m5/1m5"/>
   </p>
   <p>
-    <img alt="num lang" src="https://img.shields.io/github/languages/count/1m5/1m5-daemon"/>
-    <img alt="top lang" src="https://img.shields.io/github/languages/top/1m5/1m5-daemon"/>
+    <img alt="num lang" src="https://img.shields.io/github/languages/count/1m5/1m5"/>
+    <img alt="top lang" src="https://img.shields.io/github/languages/top/1m5/1m5"/>
     <a href="https://blog.rust-lang.org/2020/03/12/Rust-1.42.html"><img alt="Rustc Version 1.42+" src="https://img.shields.io/badge/rustc-1.42+-green.svg"/></a>
   </p>
 
   <h4>
     <a href="https://1m5.io">Info</a>
     <span> | </span>
-    <a href="https://docs.rs/crate/onemfive_daemon/">Docs</a>
+    <a href="https://docs.rs/crate/onemfive/">Docs</a>
     <span> | </span>
-    <a href="https://github.com/1m5/1m5-daemon/blob/master/CHANGELOG.md">Changelog</a>
+    <a href="https://github.com/1m5/1m5/blob/master/CHANGELOG.md">Changelog</a>
     <span> | </span>
     <a href="https://1m5.io/technical-roadmap.html">Roadmap</a>
   </h4>
