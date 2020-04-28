@@ -8,8 +8,8 @@
   </p>
   <p>
     <a href="https://travis-ci.com/1m5/1m5"><img alt="build" src="https://img.shields.io/travis/1m5/1m5"/></a>
-    <a href="https://crates.io/crates/onemfive-daemon"><img alt="Crate Info" src="https://img.shields.io/crates/v/onemfive.svg"/></a>
-    <a href="https://docs.rs/crate/onemfive_daemon/"><img alt="API Docs" src="https://img.shields.io/badge/docs.rs-onemfive-green"/></a>
+    <a href="https://crates.io/crates/onemfive"><img alt="Crate Info" src="https://img.shields.io/crates/v/onemfive.svg"/></a>
+    <a href="https://docs.rs/crate/onemfive/"><img alt="API Docs" src="https://img.shields.io/badge/docs.rs-onemfive-green"/></a>
   </p>
   <p>
     <a href="https://github.com/1m5/1m5/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/1m5/1m5"/></a>
