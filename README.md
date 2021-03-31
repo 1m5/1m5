@@ -50,6 +50,13 @@ and censorship.
 
 Currently moving Java-based version 0.6.5-SNAPSHOT to Rust embedded within a Linux-based operating system.
 
+Long-term goals are for 1M5 to be:
+
+* installable within a Linux OS as an OS service
+* installable within Android OS as an Android background service with Rust-based UIs
+* installable within iOS as an iOS background service with Rust-based UIs  
+* embedded in a fork of the [Redox operating system](https://www.redox-os.org/) called 1M505
+
 ## Why rewrite in Rust?
 
 * 1M5 is heavily networked and part of its targeted platforms are tiny electronics with limited resources.
