@@ -52,10 +52,10 @@ Currently moving Java-based version 0.6.5-SNAPSHOT to Rust embedded within a Lin
 
 Long-term goals are for 1M5 to be:
 
-* installable within a Linux OS as an OS service
-* installable within Android OS as an Android background service with Rust-based UIs
-* installable within iOS as an iOS background service with Rust-based UIs  
-* embedded in a fork of the [Redox operating system](https://www.redox-os.org/) called 1M505
+1. installable within a Linux OS as an OS service supporting Browser-based UIs with WASM
+1. installable within Android OS as an Android background service supporting Android & Rust-based UIs
+1. installable within iOS as an iOS background service supporting iOS & Rust-based UIs  
+1. embedded in a fork of the [Redox operating system](https://www.redox-os.org/) called 1M505
 
 ## Why rewrite in Rust?
 
@@ -63,12 +63,14 @@ Long-term goals are for 1M5 to be:
 * Rust has great support for threading and keeping threads safe. 
 * Mozilla has a great reputation, Oracle nor Google does not. 
 * Rust was open sourced from the beginning therefore not likely to cause future issues with copyright.
-* Many of the platforms 1M5 is integrating with like Bitcoin, Monero, GNU Radio were written in C++ and a bit of a pain 
+* Many of the platforms 1M5 is integrating with like Bitcoin, Tor, GNU Radio were written in C++ and a bit of a pain 
 to integrate with Java, so ease of interoperating with them is important. 
-* C, C++, and Go were considered but the first two don't have the memory protections I wish for (not entirely true with C++) 
+* C, C++, and Go were considered but the first two don't have the memory protections I wish for (partially true with C++) 
 and are often written in very terse methods and the latter uses garbage collection which I wanted to avoid and was written by Google who is slowly restricting Android development. 
 * Learning Rust is exciting. Neither Clojure, Scala, or other JVM languages have produced much of that affect.
 * 1M5 codebase is going to be much smaller with far less objects yet still get the benefit of object-orientation.
+* Having an OS being entirely written in Rust (Redox) as a foundation
+* Can support multiple platforms without having to include a separate virtual machine (e.g. JVM, Go, etc) which is not likely to be installed making packaging more difficult
 
 ## Current TODO:
 
